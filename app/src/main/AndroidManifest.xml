@@ -14,7 +14,7 @@
         android:name=".Application"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Wyfy">
+        android:theme="@style/Theme.WyFy">
 
         <activity
             android:name=".MainActivity"

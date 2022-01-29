@@ -1,4 +1,4 @@
-# Wyfy
+# WyFy
 
 Wi-Fi change state adapter.
 
@@ -11,7 +11,7 @@ Wi-Fi change state adapter.
 [comment]: <> (     height="80">]&#40;https://f-droid.org/packages/me.lucky.wyfy/&#41;)
 
 <img 
-     src="https://raw.githubusercontent.com/x13a/Wyfy/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" 
+     src="https://raw.githubusercontent.com/x13a/WyFy/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" 
      width="30%" 
      height="30%">
 
