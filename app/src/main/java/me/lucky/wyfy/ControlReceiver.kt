@@ -34,7 +34,10 @@ class ControlReceiver : BroadcastReceiver() {
         var result = false
         try {
             @Suppress("deprecation")
-            result = ctx.getSystemService(WifiManager::class.java)?.setWifiEnabled(enabled) == true
+            result = ctx
+                .applicationContext
+                .getSystemService(WifiManager::class.java)
+                ?.setWifiEnabled(enabled) == true
         } catch (exc: SecurityException) {}
         return result
     }

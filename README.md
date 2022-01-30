@@ -26,6 +26,14 @@ Actions:
 
 - ChangeWiFiState - change Wi-Fi state
 
+## Example
+
+```sh
+$ adb shell am broadcast \
+    -a me.lucky.wyfy.action.SET_ON \
+    -n me.lucky.wyfy/.ControlReceiver
+```
+
 ## License
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
