@@ -2,13 +2,10 @@
 
 Wi-Fi change state adapter.
 
-[comment]: <> ([<img)
-
-[comment]: <> (     src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png")
-
-[comment]: <> (     alt="Get it on F-Droid")
-
-[comment]: <> (     height="80">]&#40;https://f-droid.org/packages/me.lucky.wyfy/&#41;)
+[<img
+     src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/me.lucky.wyfy/)
 
 <img 
      src="https://raw.githubusercontent.com/x13a/WyFy/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" 
@@ -16,7 +13,15 @@ Wi-Fi change state adapter.
      height="30%">
 
 Tiny app to change Wi-Fi state via broadcast. 
-Useful to bypass Google limitation on Android 10 and newer.
+Useful to bypass Google limitation on apps targeting `API 29` and higher.
+
+After toggling it ON, to change Wi-Fi state you have to send broadcast to 
+`me.lucky.wyfy/.ControlReceiver` with the action below. Also you may require code authentication to 
+limit access to controller by clicking on the code block (red - disabled, yellow - enabled). While 
+authentication enabled you have to send this code in broadcast extra with the key `code`.
+
+Broadcasts can be sent with Key Mapper, apps for automation like Automate/Tasker/MacroDroid and so 
+on.
 
 Actions:
 * me.lucky.wyfy.action.SET_ON

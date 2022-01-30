@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WyFy</string>
-    <string name="description">Wi-Fi change state adapter. The authentication code below can be used to prevent any app from changing Wi-Fi state.</string>
+    <string name="description">Wi-Fi change state adapter. The authentication code below can be used to limit access to the controller.</string>
 </resources>
