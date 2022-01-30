@@ -19,12 +19,12 @@ Tiny app to change Wi-Fi state via broadcast.
 Useful to bypass Google limitation on Android 10 and newer.
 
 Actions:
-- me.lucky.wyfy.action.SET_ON
-- me.lucky.wyfy.action.SET_OFF
+* me.lucky.wyfy.action.SET_ON
+* me.lucky.wyfy.action.SET_OFF
 
 ## Permissions
 
-- ChangeWiFiState - change Wi-Fi state
+* CHANGE_WIFI_STATE - change Wi-Fi state
 
 ## Example
 

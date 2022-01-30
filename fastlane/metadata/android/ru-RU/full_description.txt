@@ -2,11 +2,11 @@
 Полезно для обхода ограничения компании Google в Android 10 и новее.
 
 Действия:
-- me.lucky.wyfy.action.SET_ON
-- me.lucky.wyfy.action.SET_OFF
+* me.lucky.wyfy.action.SET_ON
+* me.lucky.wyfy.action.SET_OFF
 
 Разрешения:
-* ChangeWiFiState - изменения состояния Wi-Fi
+* CHANGE_WIFI_STATE - изменения состояния Wi-Fi
 
 Это свободное программное обеспечение с открытым исходным кодом.
 Лицензия: GPL-3

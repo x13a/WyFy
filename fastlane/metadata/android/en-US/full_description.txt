@@ -6,7 +6,7 @@ Actions:
 * me.lucky.wyfy.action.SET_OFF
 
 Permissions:
-* ChangeWiFiState - change Wi-Fi state
+* CHANGE_WIFI_STATE - change Wi-Fi state
 
 It is Free Open Source Software.
 License: GPL-3
