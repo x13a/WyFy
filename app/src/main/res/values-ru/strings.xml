@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">WyFy</string>
     <string name="description">Адаптер для изменения состояния Wi-Fi. Код аутентификации находящийся ниже может быть использван для того, чтобы ограничить доступ к контроллеру.</string>
+    <string name="copied_popup">Скопировано</string>
 </resources>

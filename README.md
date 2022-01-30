@@ -17,8 +17,8 @@ Useful to bypass Google limitation on apps targeting `API 29` and higher.
 
 After toggling it ON, to change Wi-Fi state you have to send broadcast to 
 `me.lucky.wyfy/.ControlReceiver` with the action below. Also you may require code authentication to 
-limit access to controller by clicking on the code block (red - disabled, yellow - enabled). While 
-authentication enabled you have to send this code in broadcast extra with the key `code`.
+limit access to controller by long clicking on the code block (red - disabled, yellow - enabled). 
+While authentication enabled you have to send this code in broadcast extra with the key `code`.
 
 Broadcasts can be sent with Key Mapper, apps for automation like Automate/Tasker/MacroDroid and so 
 on.

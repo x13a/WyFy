@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">WyFy</string>
     <string name="description">Wi-Fi change state adapter. The authentication code below can be used to limit access to the controller.</string>
+    <string name="copied_popup">Copied</string>
 </resources>
