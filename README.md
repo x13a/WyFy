@@ -20,8 +20,10 @@ After toggling it ON, to change Wi-Fi state you have to send broadcast to
 limit access to controller by long clicking on the code block (red - disabled, yellow - enabled). 
 While authentication enabled you have to send this code in broadcast extra with the key `code`.
 
-Broadcasts can be sent with Key Mapper, apps for automation like Automate/Tasker/MacroDroid and so 
-on.
+Broadcasts can be sent with [Key Mapper](https://github.com/sds100/KeyMapper), apps for automation 
+like [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)/
+[Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)/
+[MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) and so on.
 
 Actions:
 * me.lucky.wyfy.action.SET_ON
