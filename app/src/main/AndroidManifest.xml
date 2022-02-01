@@ -29,6 +29,7 @@
             android:name=".ControlReceiver"
             android:enabled="false"
             android:exported="true"
+            android:permission="android.permission.CHANGE_WIFI_STATE"
             tools:ignore="ExportedReceiver">
             <intent-filter>
                 <action android:name="me.lucky.wyfy.action.SET_ON" />
