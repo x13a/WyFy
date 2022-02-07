@@ -15,16 +15,6 @@ Wi-Fi change state adapter.
 Tiny app to change Wi-Fi state via broadcast. 
 Useful to bypass Google limitation on apps targeting `API 29` and higher.
 
-After toggling it ON, to change Wi-Fi state you have to send broadcast to 
-`me.lucky.wyfy/.ControlReceiver` with the action below. Also you may require code authentication to 
-limit access to controller by long clicking on the code block (red - disabled, yellow - enabled). 
-While authentication enabled you have to send this code in broadcast extra with the key `code`.
-
-Broadcasts can be sent with [Key Mapper](https://github.com/sds100/KeyMapper), apps for automation 
-like [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)/
-[Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)/
-[MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) and so on.
-
 Actions:
 * me.lucky.wyfy.action.SET_ON
 * me.lucky.wyfy.action.SET_OFF
