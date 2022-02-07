@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
     private fun setup() {
         binding.apply {
             code.setOnClickListener {
+                clipboardManager?.setPrimaryClip(ClipData.newPlainText("", prefs.code))
                 if (clipboardManager != null) {
-                    clipboardManager?.setPrimaryClip(ClipData.newPlainText("", prefs.code))
                     Snackbar.make(code, R.string.copied_popup, Snackbar.LENGTH_SHORT).show()
                 }
             }
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         ))
     }
 
-    private fun makeCode(): String = UUID.randomUUID().toString()
+    private fun makeCode() = UUID.randomUUID().toString()
 
     private fun setComponentState(cls: Class<*>, value: Boolean) {
         packageManager.setComponentEnabledSetting(

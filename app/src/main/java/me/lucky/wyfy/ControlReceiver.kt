@@ -26,19 +26,17 @@ class ControlReceiver : BroadcastReceiver() {
             val code = prefs.code
             if (code == "" || code != intent.getStringExtra(KEY)) return
         }
-        setWifiEnabled(context, enabled)
+        try {
+            setWifiEnabled(context, enabled)
+        } catch (exc: SecurityException) {}
     }
 
     @RequiresPermission(Manifest.permission.CHANGE_WIFI_STATE)
     private fun setWifiEnabled(ctx: Context, enabled: Boolean): Boolean {
-        var result = false
-        try {
-            @Suppress("deprecation")
-            result = ctx
-                .applicationContext
-                .getSystemService(WifiManager::class.java)
-                ?.setWifiEnabled(enabled) == true
-        } catch (exc: SecurityException) {}
-        return result
+        @Suppress("deprecation")
+        return ctx
+            .applicationContext
+            .getSystemService(WifiManager::class.java)
+            ?.setWifiEnabled(enabled) == true
     }
 }
