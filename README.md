@@ -15,9 +15,13 @@ Wi-Fi change state adapter.
 Tiny app to change Wi-Fi state via broadcast. 
 Useful to bypass Google limitation on apps targeting `API 29` and higher.
 
+You have to sent a broadcast message to `me.lucky.wyfy/.ControlReceiver` with one of the actions 
+below.
+
 Actions:
 * me.lucky.wyfy.action.SET_ON
 * me.lucky.wyfy.action.SET_OFF
+* me.lucky.wyfy.action.TOGGLE
 
 ## Permissions
 

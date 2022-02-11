@@ -32,6 +32,7 @@
             <intent-filter>
                 <action android:name="me.lucky.wyfy.action.SET_ON" />
                 <action android:name="me.lucky.wyfy.action.SET_OFF" />
+                <action android:name="me.lucky.wyfy.action.TOGGLE" />
             </intent-filter>
         </receiver>
 
