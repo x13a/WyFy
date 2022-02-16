@@ -6,17 +6,17 @@ import androidx.preference.PreferenceManager
 
 class Preferences(ctx: Context) {
     companion object {
-        private const val CODE_ENABLED = "code_enabled"
-        private const val CODE = "code"
+        private const val AUTH_CODE_ENABLED = "auth_code_enabled"
+        private const val AUTH_CODE = "auth_code"
     }
 
     private val prefs = PreferenceManager.getDefaultSharedPreferences(ctx)
 
-    var isCodeEnabled: Boolean
-        get() = prefs.getBoolean(CODE_ENABLED, false)
-        set(value) = prefs.edit { putBoolean(CODE_ENABLED, value) }
+    var isAuthCodeEnabled: Boolean
+        get() = prefs.getBoolean(AUTH_CODE_ENABLED, false)
+        set(value) = prefs.edit { putBoolean(AUTH_CODE_ENABLED, value) }
 
-    var code: String
-        get() = prefs.getString(CODE, "") ?: ""
-        set(value) = prefs.edit { putString(CODE, value) }
+    var authCode: String
+        get() = prefs.getString(AUTH_CODE, "") ?: ""
+        set(value) = prefs.edit { putString(AUTH_CODE, value) }
 }

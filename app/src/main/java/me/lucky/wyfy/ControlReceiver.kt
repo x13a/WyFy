@@ -17,18 +17,18 @@ class ControlReceiver : BroadcastReceiver() {
     }
 
     override fun onReceive(context: Context?, intent: Intent?) {
-        if (context == null || intent == null) return
-        val manager = Manager(context)
-        val enabled = when(intent.action) {
+        val manager = Manager(context ?: return)
+        val enabled = when (intent?.action) {
             SET_ON -> true
             SET_OFF -> false
             TOGGLE -> !(manager.isWifiEnabled ?: return)
             else -> return
         }
         val prefs = Preferences(context)
-        if (prefs.isCodeEnabled) {
-            val code = prefs.code
-            if (code == "" || code != intent.getStringExtra(KEY)) return
+        if (prefs.isAuthCodeEnabled) {
+            val code = prefs.authCode
+            assert(code.isNotBlank())
+            if (code != intent.getStringExtra(KEY)) return
         }
         try {
             manager.setWifiEnabled(enabled)

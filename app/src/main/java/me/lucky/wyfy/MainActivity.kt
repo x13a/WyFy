@@ -27,25 +27,24 @@ class MainActivity : AppCompatActivity() {
     private fun init() {
         prefs = Preferences(this)
         clipboardManager = getSystemService(ClipboardManager::class.java)
-        if (prefs.code == "") prefs.code = makeCode()
-        updateCodeColorState()
+        if (prefs.authCode.isEmpty()) prefs.authCode = makeCode()
+        updateAuthCodeColorState()
         binding.apply {
-            code.text = prefs.code
+            authCode.text = prefs.authCode
             toggle.isChecked = getComponentState(ControlReceiver::class.java)
         }
     }
 
     private fun setup() {
         binding.apply {
-            code.setOnClickListener {
-                clipboardManager?.setPrimaryClip(ClipData.newPlainText("", prefs.code))
-                if (clipboardManager != null) {
-                    Snackbar.make(code, R.string.copied_popup, Snackbar.LENGTH_SHORT).show()
-                }
+            authCode.setOnClickListener {
+                clipboardManager?.setPrimaryClip(ClipData.newPlainText("", prefs.authCode))
+                if (clipboardManager != null)
+                    Snackbar.make(authCode, R.string.copied_popup, Snackbar.LENGTH_SHORT).show()
             }
-            code.setOnLongClickListener {
-                prefs.isCodeEnabled = !prefs.isCodeEnabled
-                updateCodeColorState()
+            authCode.setOnLongClickListener {
+                prefs.isAuthCodeEnabled = !prefs.isAuthCodeEnabled
+                updateAuthCodeColorState()
                 true
             }
             toggle.setOnCheckedChangeListener { _, isChecked ->
@@ -54,9 +53,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateCodeColorState() {
-        binding.code.setBackgroundColor(getColor(
-            if (prefs.isCodeEnabled) R.color.code_on else R.color.code_off
+    private fun updateAuthCodeColorState() {
+        binding.authCode.setBackgroundColor(getColor(
+            if (prefs.isAuthCodeEnabled) R.color.code_on else R.color.code_off
         ))
     }
 
