@@ -10,6 +10,7 @@
 * me.lucky.wyfy.action.TOGGLE
 
 Разрешения:
+* ACCESS_WIFI_STATE - проверки состояния Wi-Fi
 * CHANGE_WIFI_STATE - изменения состояния Wi-Fi
 
 Это свободное программное обеспечение с открытым исходным кодом.

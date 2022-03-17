@@ -10,6 +10,7 @@ Actions:
 * me.lucky.wyfy.action.TOGGLE
 
 Permissions:
+* ACCESS_WIFI_STATE - check Wi-Fi state
 * CHANGE_WIFI_STATE - change Wi-Fi state
 
 It is Free Open Source Software.

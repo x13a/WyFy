@@ -25,6 +25,7 @@ Actions:
 
 ## Permissions
 
+* ACCESS_WIFI_STATE - check  Wi-Fi state
 * CHANGE_WIFI_STATE - change Wi-Fi state
 
 ## Example
